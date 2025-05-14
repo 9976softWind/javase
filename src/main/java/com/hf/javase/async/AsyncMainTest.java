@@ -11,9 +11,12 @@ public class AsyncMainTest {
 
     private static final SqlBusinessOperator sqlBusinessOperator = new ThreadSqlBusinessOperator();
 
+    private static final SqlBusinessOperator futureSqlBusinessOperator = new FutureSqlBusinessOperator();
+
     public static void main(String[] args) {
         log.info("主线程处理开始");
-        sqlBusinessOperator.insert();
+//        sqlBusinessOperator.insert();
+//        futureSqlBusinessOperator.insert();
         log.info("主线程处理完毕");
     }
 
