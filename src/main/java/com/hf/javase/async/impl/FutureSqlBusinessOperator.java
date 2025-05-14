@@ -1,5 +1,6 @@
-package com.hf.javase.async;
+package com.hf.javase.async.impl;
 
+import com.hf.javase.async.SqlBusinessOperator;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.*;
@@ -9,7 +10,7 @@ import java.util.concurrent.*;
  * @date 2025.5.13
  */
 @Slf4j
-public class FutureSqlBusinessOperator implements SqlBusinessOperator{
+public class FutureSqlBusinessOperator implements SqlBusinessOperator {
 
     private static  final int threads = 5;
 
