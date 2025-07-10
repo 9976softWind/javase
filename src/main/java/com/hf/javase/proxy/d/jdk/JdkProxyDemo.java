@@ -1,4 +1,4 @@
-package com.hf.javase.aop.jdk;
+package com.hf.javase.proxy.d.jdk;
 
 import java.lang.reflect.Proxy;
 
