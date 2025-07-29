@@ -1,9 +1,9 @@
 package com.hf.javase.lock;
 
-public class MyLockTest {
+public class MyExclusiveLockTest {
 
     private static int count = 0;
-    private static final MyLock myLock = new MyLock();
+    private static final MyExclusiveLock myLock = new MyExclusiveLock();
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 5; i++) {

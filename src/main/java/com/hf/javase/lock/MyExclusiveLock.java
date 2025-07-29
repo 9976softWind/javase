@@ -4,14 +4,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 //基于AQS实现的自定义独占锁
-public class MyLock implements Lock {
+public class MyExclusiveLock implements Lock {
     // 同步类，实现AQS的具体逻辑
     private final Sync sync = new Sync();
     // 同步器实现
     private static class Sync extends AbstractQueuedSynchronizer{
+
         @Override
         /**
          * 尝试获取独占锁
